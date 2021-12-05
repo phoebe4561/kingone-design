@@ -1,0 +1,183 @@
+.bgImg {
+  background-image: url("/Images/bgImg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bgContainer {
+  position: relative;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 3%;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.logo {
+  position: absolute;
+  left: 28%;
+  top: 6%;
+  width: 9%;
+}
+
+.title {
+  position: absolute;
+  top: 7%;
+  right: 19%;
+  font-size: 2rem;
+  width: 40%;
+  font-weight: 800;
+  letter-spacing: 1rem;
+  @include screen-1300 {
+    font-size: 1.5rem;
+    letter-spacing: 0.8rem;
+  }
+  @include pad {
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+  }
+  @include phone {
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.en-title {
+  position: absolute;
+  top: 12%;
+  right: 25%;
+  font-size: 1.75rem;
+  width: 30%;
+  font-weight: 800;
+  @include screen-1300 {
+    font-size: 1.25rem;
+  }
+  @include pad {
+    font-size: 0.8rem;
+  }
+  @include phone {
+    font-size: 0.4rem;
+    width: 50%;
+    right: 12%;
+  }
+}
+
+.wallImg {
+  position: absolute;
+  left: 4%;
+  top: 43%;
+  width: 11%;
+}
+
+.mainImg {
+  position: absolute;
+  left: 23%;
+  top: 41%;
+  width: 49.7%;
+}
+
+.boardImg {
+  position: absolute;
+  right: 4%;
+  top: 45%;
+  width: 18%;
+}
+
+.tag {
+  position: absolute;
+  top: 44%;
+  right: 6%;
+  border-radius: 5px;
+  padding: 0.8rem 0.5rem;
+  color: white;
+  background-image: linear-gradient(to bottom, #0e4dc2fb, #93f8f0);
+  @include pad {
+    display: none;
+  }
+}
+
+.board-content {
+  position: absolute;
+  right: 4%;
+  top: 45%;
+  width: 18%;
+  padding: 2rem 1.5rem;
+  @include screen-1300 {
+    padding: 1.5rem 1rem;
+  }
+  @include pad {
+    padding: 0.8rem;
+  }
+  li {
+    margin-bottom: 0.5rem;
+    @include pad {
+      margin-bottom: 0.2rem;
+    }
+  }
+  span {
+    font-size: 0.8rem;
+    @include pad {
+      display: none;
+    }
+  }
+}
+
+.info {
+  background-image: linear-gradient(to right, #0d48b6fb, #88f3cf);
+  border: none;
+  border-radius: 10px;
+  padding: 0.2rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+  width: 40%;
+  @include screen-1300 {
+    font-size: 0.8rem;
+  }
+  @include pad {
+    width: 70%;
+    font-size: 0.4rem;
+    display: block;
+  }
+}
+
+.handImg {
+  position: absolute;
+  width: 3.5%;
+  top: 92%;
+  right: 35%;
+}
+
+.btn {
+  position: absolute;
+  top: 86%;
+  left: 40%;
+  width: 25%;
+  background-image: linear-gradient(to right, #0d48b6fb, #88f3cf);
+  border: none;
+  border-radius: 100px;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  @include screen-1300 {
+    width: 35%;
+    padding: 1rem;
+  }
+  @include pad {
+    width: 50%;
+    left: 30%;
+    font-size: 24px;
+    padding: 0.3rem;
+  }
+  @include phone {
+    font-size: 20px;
+  }
+  span {
+    margin-left: 10px;
+  }
+}
